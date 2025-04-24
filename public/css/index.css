@@ -46,7 +46,7 @@ a {
     text-decoration: n*-one;
 }
 a:hover {
-    font-weightext-decoration: underline;
+    text-decoration: underline;
 }
 
 .imagen{
