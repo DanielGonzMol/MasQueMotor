@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,55 +7,65 @@
     <link rel="stylesheet" href="css/servicios.css">
     <title>Servicios MasqueMotor</title>
 </head>
-</head>
 
 <body>
 
     <header>
         <h1>Concesionario AutoPlus</h1>
         <p>Tu confianza sobre ruedas</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="quienessomos.html">¿Quiénes somos?</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </header>
 
     <section>
         <h2>Servicios que Ofrecemos</h2>
         <div class="services">
-            <div class="service-card">
+            <div class="service-card" data-id="1">
                 <h3>Servicio Exprés de Lubricación</h3>
                 <p>Mantén tu motor funcionando como nuevo con nuestro servicio profesional de cambio de aceite.</p>
+                <button class="more-details-btn">Ver más</button>
+                <p class="extra-details" style="display: none;">Este servicio incluye aceite de alta calidad y una revisión general de los sistemas de lubricación.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-id="2">
                 <h3>Distribución Segura</h3>
                 <p>Mantén el corazón de tu motor latiendo con precisión: cambia la distribución a tiempo y evita
                     costosas averías.</p>
+                <button class="more-details-btn">Ver más</button>
+                <p class="extra-details" style="display: none;">Reemplazamos la correa de distribución para evitar daños al motor, garantizando un funcionamiento óptimo.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-id="3">
                 <h3>Neumáticos & Control</h3>
                 <p>Conduce seguro y alarga la vida de tus neumáticos con un cambio y alineación profesional que mantiene
                     tu vehículo en perfecta armonía con la carretera.</p>
+                <button class="more-details-btn">Ver más</button>
+                <p class="extra-details" style="display: none;">Realizamos alineación y balanceo para mejorar el rendimiento y desgaste uniforme de tus neumáticos.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-id="4">
                 <h3>Retoque Premium</h3>
                 <p>Devolvemos a tu vehículo su aspecto original con trabajos de chapa y pintura precisos, rápidos y con
                     acabado de fábrica.</p>
+                <button class="more-details-btn">Ver más</button>
+                <p class="extra-details" style="display: none;">Nuestros expertos trabajan con pintura original y técnicas avanzadas para asegurar un acabado perfecto.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-id="5">
                 <h3>Repuestos Originales</h3>
                 <p>Amplio stock de piezas originales para todas las marcas.</p>
+                <button class="more-details-btn">Ver más</button>
+                <p class="extra-details" style="display: none;">Ofrecemos repuestos originales para garantizar la máxima calidad y durabilidad de tu vehículo.</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2>Contáctanos</h2>
-        <p style="text-align:center;">📍 Av. Principal 123, Ciudad Motor | 📞 (123) 456-7890 | 📧
-            contacto@MasqueMotor.com
-        </p>
-    </section>
 
     <footer>
         <p>&copy; 2025 Concesionario MasqueMotor. Todos los derechos reservados.</p>
     </footer>
 
+    <script src="js/servicios.js"></script>
 </body>
 
 </html>
