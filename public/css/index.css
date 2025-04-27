@@ -1,82 +1,92 @@
-html,body {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
 
 header {
-    background-color:Black;
+    background-color: #0a0a23;
     color: white;
-    padding: 10px;
+    padding: 1rem 2rem;
     display: flex;
-    flex-direction: wrap;
     justify-content: space-between;
-
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-main{
-    display: flex;
-    flex-direction: wrap;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f0f0f0;
+header h1 {
+    font-size: 1.8rem;
 }
 
-nav {
+nav a {
     color: white;
-    display: flex;
-    flex-direction: wrap;
-    justify-content: center;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-select{
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    padding: 5px;
-    margin-left: 10px;
-    border-radius: 5px;
-}
-
-h1{
-    text-align: center;
-}
-
-a {
-    color: white;
-    text-decoration: n*-one;
-}
-a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
-.imagen{
-    display: flex;
-    flex-direction: wrap;
-    justify-content: center;
-    padding: 20px;
+    main {
+        flex: 1;
+        padding: 2rem;
+    }
+
+
+#intro {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.imagen{
-    width: 100px;
-    height: 100px;
-    max-width: 300px;
-    margin: 10px;
+#coches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
-img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: inset 10 10 10 10 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+.coche-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.coche-card:hover {
+    transform: scale(1.03);
+}
+
+.coche-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.coche-card .info {
+    padding: 1rem;
 }
 
 footer {
-    background-color: Black;
-    color: white;
     text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-    position: sticky;
+    padding: 1rem;
+    background-color: #0a0a23;
+    color: white;
+    margin-top: 2rem;
 }
