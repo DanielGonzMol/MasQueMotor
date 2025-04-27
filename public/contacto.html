@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,15 +11,20 @@
 <body>
 
     <header>
-        <h1>MasqueMotor</h1>
-        <p>Tu concesionario de confianza para vehículos de calidad</p>
+        <h1>Más que Motores</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="quienessomos.html">¿Quiénes somos?</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </header>
 
-    <section>
+    <section class="contact-form-section">
         <h2>Contáctanos</h2>
         <div class="form-container">
             <h3>Envíanos tus consultas o comentarios</h3>
-            <form action="#" method="post">
+            <form id="contactForm" action="#" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required />
 
@@ -32,21 +37,24 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-                <input type="submit" value="Enviar Mensaje" />
+                <button type="submit">Enviar Mensaje</button>
             </form>
         </div>
+        <div id="formMessage" class="form-message"></div>
     </section>
 
-    <section>
+    <section class="contact-info-section">
         <h2>Información de Contacto</h2>
-        <p>📍 **Dirección**: Av. Principal 123, Ciudad Motor</p>
-        <p>📞 **Teléfono**: (123) 456-7890</p>
-        <p>📧 **Correo Electrónico**: contacto@masquemotor.com</p>
+        <p>📍 <strong>Dirección:</strong> Av. Principal 123, Ciudad Motor</p>
+        <p>📞 <strong>Teléfono:</strong> (123) 456-7890</p>
+        <p>📧 <strong>Correo Electrónico:</strong> contacto@masquemotor.com</p>
     </section>
 
     <footer>
         <p>&copy; 2025 MasqueMotor. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>
