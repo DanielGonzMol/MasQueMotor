@@ -1,0 +1,30 @@
+{
+    "name": "masquemotor",
+    "version": "1.0.0",
+    "description": "Tu proyecto",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^10.0.0",
+        "express": "^4.21.2",
+        "jsonwebtoken": "^9.0.2",
+        "mssql": "^11.0.1"
+    },
+    "author": "",
+    "license": "ISC",
+    "directories": {
+        "doc": "docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DanielGonzMol/MasQueMotor.git"
+    },
+    "keywords": [],
+    "bugs": {
+        "url": "https://github.com/DanielGonzMol/MasQueMotor/issues"
+    },
+    "homepage": "https://github.com/DanielGonzMol/MasQueMotor#readme"
+}
