@@ -22,33 +22,30 @@ body {
 header {
     background-color: #0a0a23;
     color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 2rem;
+    text-align: center;
 }
 
 header h1 {
     font-size: 1.8rem;
 }
 
+/* Navegación */
+nav {
+    margin-top: 0.5rem;
+}
+
 nav a {
     color: white;
-    margin: 0 1rem;
     text-decoration: none;
+    font-size: 1rem;
+    margin: 0 1rem;
     font-weight: 500;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
-
-    main {
-        flex: 1;
-        padding: 2rem;
-    }
-
 
 #intro {
     text-align: center;
