@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/contacto.css">
     <title>Contacto</title>
 </head>
@@ -11,46 +12,69 @@
 <body>
 
     <header>
-        <a href="index.html" style="text-decoration: none; color: white;"><h1>Más que Motores</h1></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <h1>Más que Motores</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="quienessomos.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="contact-form-section">
-        <h2>Contáctanos</h2>
-        <div class="form-container">
-            <h3>Envíanos tus consultas o comentarios</h3>
-            <form id="contactForm" action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required />
+    <main>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required />
+        <section class="contact-info-section">
+            <h2>Información de Contacto</h2>
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <h3>📍 Dirección</h3>
+                    <p>Av. Principal 123,<br>Ciudad Motor, CP 45678</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Teléfono</h3>
+                    <p><a href="tel:+341234567890">(123) 456-7890</a></p>
+                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📧 Correo Electrónico</h3>
+                    <p><a href="mailto:contacto@masquemotor.com">contacto@masquemotor.com</a></p>
+                    <p>Responderemos en menos de 24h</p>
+                </div>
+                <div class="contact-card">
+                    <h3>🕒 Horario de Atención</h3>
+                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                    <p>Sábados: 10:00 - 14:00</p>
+                </div>
+            </div>
+        </section>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" />
+        <section class="contact-form-section">
+            <h2>Contáctanos</h2>
+            <div class="form-container">
+                <h3>Envíanos tus consultas o comentarios</h3>
+                <form id="contactForm" action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" />
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu correo" />
 
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </div>
-        <div id="formMessage" class="form-message"></div>
-    </section>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" />
 
-    <section class="contact-info-section">
-        <h2>Información de Contacto</h2>
-        <p>📍 <strong>Dirección:</strong> Av. Principal 123, Ciudad Motor</p>
-        <p>📞 <strong>Teléfono:</strong> (123) 456-7890</p>
-        <p>📧 <strong>Correo Electrónico:</strong> contacto@masquemotor.com</p>
-    </section>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje"></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div id="formMessage" class="form-message"></div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 MasqueMotor. Todos los derechos reservados.</p>

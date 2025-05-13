@@ -10,26 +10,38 @@
 
 <body>
     <header>
-        <a href="#" style="text-decoration: none; color: white;"><h1>Más que Motores</h1></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <h1>Más que Motores</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="quienessomos.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="intro">
+        <section id="intro" class="intro-section">
             <h2>Bienvenido a Más que Motores</h2>
             <p>Tu concesionario de confianza. ¡Descubre nuestros vehículos destacados!</p>
         </section>
 
-        <section id="coches-grid" style=" margin-left: 20%; margin-right: 20%">
+        <section class="servicios" id="servicios">
+            <h2>Nuestros Servicios Destacados</h2>
+            <p>Ofrecemos un servicio integral que abarca la venta de vehículos nuevos y usados, financiación a medida,
+                mantenimiento preventivo y reparaciones con repuestos originales. Confianza y satisfacción garantizadas
+                en cada visita.</p>
+        </section>
+
+        <section id="coches-grid">
+            <h2>Vehículos Destacados</h2>
+            <!-- Aquí se cargarán los coches dinámicamente -->
         </section>
     </main>
+
 
     <footer>
         <p>&copy; 2025 Más que Motores. Todos los derechos reservados.</p>
