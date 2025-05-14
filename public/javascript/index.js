@@ -29,7 +29,7 @@ function cargarCoches() {
 
     coches.forEach(coche => {
         const card = document.createElement('div');
-        card.className = 'coche-card';
+        card.classList.add('coche-card')    ;
         /*card.innerHTML = `
             <a href="coche.html">
                 <img src="${coche.imagen}" alt="${coche.nombre}">
@@ -43,9 +43,10 @@ function cargarCoches() {
         const img = document.createElement("img");
         const h3 = document.createElement("h3");
 
-
+        
         anchor.href= `detail.html?param1=${coche.id}`;
         img.src = coche.imagen;
+        img.classList.add("cocheImagen")
         h3.textContent = coche.nombre;
 
         anchor.appendChild(img);

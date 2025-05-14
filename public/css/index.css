@@ -7,13 +7,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #eef3fc;
-    /* azul muy claro para fondo general */
     color: #1e3c72;
-    /* texto principal azul oscuro */
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background: linear-gradient(90deg, #1e3c72, #2a5298);
     color: #fff;
@@ -49,8 +46,6 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* Main Sections */
-/* Sección de bienvenida */
 .intro-section {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
@@ -73,7 +68,6 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* Sección de servicios */
 .servicios {
     background: linear-gradient(135deg, #ffffff, #f2f9fe);
     color: #1e3c72;
@@ -97,28 +91,56 @@ nav a:hover {
     color: #555;
 }
 
-/* Sección de vehículos */
 #coches-grid {
     background: #ffffff;
-    padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
     margin-top: 40px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
 }
 
 #coches-grid h2 {
     font-size: 2rem;
     color: #2a5298;
+    width: 100%;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-/* Ajustes generales para secciones */
-section {
-    margin-bottom: 60px;
+.coche-card {
+    width: 20%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Hacer que las secciones sean más visibles a medida que se hace scroll */
+.coche-card:hover {
+    transform: scale(1.03);
+}
+
+.coche-card img {
+    width: 100%;
+    height: 60%;
+    height: auto;
+    display: block;
+}
+
+.coche-card h3 {
+    height: 40%;
+    font-size: 1rem;
+    color: #1e3c72;
+    margin: 10px 0;
+}
+
 section:nth-child(odd) {
     transform: translateY(10px);
     opacity: 0;
@@ -132,20 +154,8 @@ section:nth-child(odd) {
     }
 }
 
-/* Footer */
 footer {
     background: linear-gradient(90deg, #2a5298, #1e3c72);
-    color: #f1f1f1;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-}
-
-
-/* Footer */
-footer {
-    background: linear-gradient(90deg, #2a5298, #1e3c72);
-    /* gradiente inverso */
     color: #f1f1f1;
     text-align: center;
     padding: 20px;
