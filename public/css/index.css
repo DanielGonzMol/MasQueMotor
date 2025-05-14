@@ -161,3 +161,11 @@ footer {
     padding: 20px;
     font-size: 0.9rem;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:active{
+    color: black;
+}

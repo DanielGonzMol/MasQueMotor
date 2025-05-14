@@ -59,7 +59,7 @@ nav ul li a:hover{
 
 #intro {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #coches-grid {
@@ -131,7 +131,6 @@ main{
 
 aside{
     height: 100%;
-    border: solid red 1px;
     width: 20%;
 }
 
@@ -150,7 +149,6 @@ article{
 }
 
 #titulo{
-    border: red 1px solid;
     font-size: 50px;
     font-weight: 900;
     margin-top: 20%;
@@ -158,7 +156,6 @@ article{
 }
 
 #imagen{
-    border: red 1px solid;
     max-width: 40%;
 }
 
