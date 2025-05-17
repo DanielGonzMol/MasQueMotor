@@ -1,6 +1,5 @@
 /* Reset básico */
 
-
 html, body {
     height: 100%;
     margin: 0px;
@@ -11,13 +10,12 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #eef3fc; /* color de fondo claro del primer CSS */
+    color: #1e3c72; /* texto azul oscuro */
 }
 
-
 header {
-    background-color: #0a0a23;
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* gradiente azul */
     color: white;
     padding: 2rem;
     text-align: center;
@@ -51,10 +49,9 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    transition: background-color 1s ease;
-    transition: color 1s ease;
+    background-color: white;
+    color: #1e3c72; /* texto azul oscuro al hacer hover */
+    transition: background-color 1s ease, color 1s ease;
 }
 
 #intro {
@@ -72,7 +69,7 @@ nav ul li a:hover{
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(30, 60, 114, 0.1); /* sombra azul suave */
     transition: transform 0.3s;
 }
 
@@ -88,22 +85,20 @@ nav ul li a:hover{
 
 .coche-card .info {
     padding: 1rem;
+    color: #1e3c72; /* texto azul oscuro */
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #0a0a23;
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
     color: white;
     margin-top: 2rem;
 }
 
+/* DETAIL */
 
-
-
-/*      DETAIL         */
-
-@media (max-width: 768px) {  /* Ajusta el tamaño según lo necesites */
+@media (max-width: 768px) {
     aside {
         display: none;
         width: 0;
@@ -111,18 +106,13 @@ footer {
     article{
         width: 100%;
         flex: 1;
-
     }
-  }
-
-
-
+}
 
 main{
     height: 100%;
-    overflow: hidden;  /*      desactivo el scroll         */ 
     width: 100%;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/004/524/993/non_2x/wooden-floor-wooden-wall-product-stand-gallery-stage-background-free-photo.jpg");
+    background-image: url("https://www.vecteezy.com/photo/1369740-road-to-a-city");
 }
 
 .row{
@@ -145,7 +135,7 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: #1e3c72; /* azul oscuro */
 }
 
 #titulo{
