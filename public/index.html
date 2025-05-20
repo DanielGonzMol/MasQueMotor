@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Más que Motores - Concesionario</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <header>
-        <h1>Más que Motores</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="quienessomos.html">¿Quiénes somos?</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <div class="nav-container">
+            <h1>Más que Motores</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="quienessomos.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="intro">
+        <section id="intro" class="intro-section">
             <h2>Bienvenido a Más que Motores</h2>
             <p>Tu concesionario de confianza. ¡Descubre nuestros vehículos destacados!</p>
         </section>
 
+        <section class="servicios" id="servicios">
+            <h2>Nuestros Servicios Destacados</h2>
+            <p>Ofrecemos un servicio integral que abarca la venta de vehículos nuevos y usados, financiación a medida,
+                mantenimiento preventivo y reparaciones con repuestos originales. Confianza y satisfacción garantizadas
+                en cada visita.</p>
+        </section>
+
         <section id="coches-grid">
-            <!-- Aquí se cargarán los coches dinámicamente -->
+            <h2>Vehículos Destacados</h2><br>
         </section>
     </main>
+
 
     <footer>
         <p>&copy; 2025 Más que Motores. Todos los derechos reservados.</p>
         <p>Desarrollado por Grupo MasqueMotor</p>
     </footer>
+
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>

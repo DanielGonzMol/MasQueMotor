@@ -1,0 +1,164 @@
+/* Reset básico */
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef3fc; /* color de fondo claro del primer CSS */
+    color: #1e3c72; /* texto azul oscuro */
+}
+
+header {
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* gradiente azul */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Navegación */
+nav {
+    margin-top: 2rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    font-weight: 900;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: #1e3c72; /* texto azul oscuro al hacer hover */
+    transition: background-color 1s ease, color 1s ease;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#coches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.coche-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(30, 60, 114, 0.1); /* sombra azul suave */
+    transition: transform 0.3s;
+}
+
+.coche-card:hover {
+    transform: scale(1.03);
+}
+
+.coche-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.coche-card .info {
+    padding: 1rem;
+    color: #1e3c72; /* texto azul oscuro */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
+    color: white;
+    margin-top: 2rem;
+}
+
+/* DETAIL */
+
+@media (max-width: 768px) {
+    aside {
+        display: none;
+        width: 0;
+    }
+    article{
+        width: 100%;
+        flex: 1;
+    }
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://www.vecteezy.com/photo/1369740-road-to-a-city");
+}
+
+.row{
+    display: flex;
+}
+
+aside{
+    height: 100%;
+    width: 20%;
+}
+
+article{
+    width: 60%;
+    background: linear-gradient(
+        to bottom,
+        transparent 10%,
+        white 20%,
+        transparent 80%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1e3c72; /* azul oscuro */
+}
+
+#titulo{
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 20%;
+    text-align: center;
+}
+
+#imagen{
+    max-width: 40%;
+}
+
+#izquierda{
+    transform: scaleX(-1);
+    height: 50px;
+    position: fixed;
+    top: 50%;
+}
+
+#derecha{
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+}

@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
@@ -6,153 +6,195 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef3fc;
+    color: #1e3c72;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #000;  /* Fondo negro */
-    color: white;
-    padding: 1rem 2rem;
-    text-align: center;
-    width: 100%;  /* Asegura que el header ocupe todo el ancho */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-/* Navegación */
-nav {
-    margin-top: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    margin: 0 15px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #444;
-    color: #ffcc00;
-}
-
-/* Asegura que el contenido no quede oculto debajo del header fijo */
-body {
-    padding-top: 120px;  /* Ajuste para que el contenido no se tape con el header */
-}
-
-/* Sección de formulario */
-.contact-form-section {
-    margin-bottom: 3rem;
-}
-
-h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
-.form-container {
-    background-color: white;
-    padding: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    opacity: 0.8;
+}
+
+/* Sección de formulario de contacto */
+.contact-form-section {
+    background: #f4f9fc;
+    color: #333;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.contact-form-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+
+.contact-form-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form-section .form-container {
+    text-align: left;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form-section form label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form-section form input,
+.contact-form-section form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 20px;
     border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.contact-form-section form input:focus,
+.contact-form-section form textarea:focus {
+    border-color: #2a5298;
+    outline: none;
+}
+
+.contact-form-section form input::placeholder,
+.contact-form-section form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form-section form button {
+    background-color: #2a5298;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-section form button:hover {
+    background-color: #1e3c72;
+}
+
+.contact-form-section form button:focus {
+    outline: none;
+}
+
+.form-message {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: green;
+}
+
+
+.contact-info-section {
+    background-color: #f9fafc;
+    color: #1e1e1e;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2a5298;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-form label {
+.contact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #1e3c72;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact-card a {
+    color: #2a5298;
+    text-decoration: none;
     font-weight: bold;
-    margin-top: 1rem;
-    display: block;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.contact-card a:hover {
+    text-decoration: underline;
 }
 
-textarea {
-    resize: vertical;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Mensajes de error o éxito */
-.form-message {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-}
-
-.success {
-    background-color: #d4edda;
-    color: #155724;
-}
-
-.error {
-    background-color: #f8d7da;
-    color: #721c24;
-}
-
-/* Información de contacto */
-.contact-info-section {
-    background-color: white;
-    padding: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 3rem;
-    text-align: center;
-}
 
 /* Footer */
 footer {
-    background-color: #000;  /* Fondo negro */
-    color: white;
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
+    color: #f1f1f1;
     text-align: center;
-    padding: 1rem 2rem;
-    width: 100%;  /* Asegura que el footer ocupe todo el ancho */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-/* Espaciado para el contenido cuando el footer está fijo */
-body {
-    padding-bottom: 60px;  /* Ajuste para que el contenido no se tape con el footer */
+    padding: 20px;
+    font-size: 0.9rem;
 }

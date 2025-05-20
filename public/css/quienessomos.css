@@ -1,85 +1,84 @@
-#subtitulo{
-    color: white;
-}
-
+/* Reset básico */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1e1e1e;
+    background-color: #f9fafc;
 }
 
+/* Header */
 header {
-    background-color: black;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
-    padding: 40px;
-    text-align: center;
-}
-
-section {
     padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h2 {
-    color: black;
-    font-size: 32px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.about-content {
-    background-color: white;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header #subtitulo {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Main Content */
+.about-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    color: #2a5298;
+}
+
+/* About Cards */
+.about-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    transition: transform 0.3s ease;
 }
 
-h3 {
-    color: black;
-    font-weight: normal;
-    font-size: 24px;
+.about-card:hover {
+    transform: translateY(-5px);
 }
 
-p {
-    color: #555;
+.about-card h3 {
+    color: #1e3c72;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.about-card p,
+.about-card ul {
+    font-size: 1rem;
     line-height: 1.6;
-    font-size: 16px;
-    margin-bottom: 20px;
+    color: #333;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.about-card ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-ul li {
-    padding-left: 30px;
-    font-size: 16px;
-    color: #555;
+.about-card ul li {
     margin-bottom: 10px;
 }
 
-.about-content img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
+/* Footer */
 footer {
-    background-color: black;
+    background-color: #1e3c72;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-#footer{
-    color: white;
-    font-size: 14px;
+    padding: 20px;
+    margin-top: 60px;
 }

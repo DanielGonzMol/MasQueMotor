@@ -22,32 +22,44 @@ const coches = [
 ];
 
 
+const params = new URLSearchParams(window.location.search);
+const cocheId = parseInt(params.get("param1"));
 
-// Función para cargar coches
-function cargarCoches() {
-    const grid = document.getElementById('coches-grid');
+let coche = {
+  id: "?",
+  nombre: "Coche no válido",
+  imagen: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nationalgeographic.com%2Fanimals%2Fmammals%2Ffacts%2Fdomestic-cat&psig=AOvVaw3-MYqBGU68gsz6-aSAvL2g&ust=1747061445928000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjHvJnVm40DFQAAAAAdAAAAABAE",
+  precio: 0
+};
 
-    coches.forEach(coche => {
-        const card = document.createElement('div');
-        card.classList.add('coche-card')    ;
+coches.forEach(cochecillo =>{
+  if (cochecillo.id === cocheId)
+    coche = cochecillo;
+});
 
-        const anchor = document.createElement("a");
-        const img = document.createElement("img");
-        const h3 = document.createElement("h3");
-        const p = document.createElement("p");
 
-        
-        anchor.href= `detail.html?param1=${coche.id}`;
-        img.src = coche.imagen;
-        img.classList.add("cocheImagen")
-        h3.textContent = coche.nombre;
+const titulo = document.getElementById("titulo");
+const imagen = document.getElementById("imagen");
+const precio = document.getElementById("precio");
+const descripcion = document.getElementById("descripcion");
 
-        anchor.appendChild(img);
-        anchor.appendChild(h3);
-        card.appendChild(anchor);
-        grid.appendChild(card);
-    });
+const izquierdaAnchor = document.getElementById("izquierdaAnchor");
+const derechaAnchor = document.getElementById("derechaAnchor");
+const izquierda = document.getElementById("izquierda");
+const derecha = document.getElementById("derecha");
+
+
+titulo.textContent = coche.nombre;
+imagen.src = coche.imagen;
+precio.textContent = coche.precio;
+descripcion.textContent = "Descripción: " + coche.descripcion;
+
+if(coche.id >= 2){
+  izquierdaAnchor.href= `detail.html?param1=${coche.id - 1}`;
+}
+if(coche.id <= coches.length - 1){
+  derechaAnchor.href= `detail.html?param1=${coche.id + 1}`;
 }
 
-// Ejecutamos al cargar la página
-document.addEventListener('DOMContentLoaded', cargarCoches);
+
+
